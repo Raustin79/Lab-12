@@ -15,7 +15,7 @@ class Television:
         self.__status: bool = False
         self.__muted: bool = False
         self.__volume: int = Television.MIN_VOLUME
-        self.__channel: int = Television.Min_CHANNEL
+        self.__channel: int = Television.MIN_CHANNEL
 
     def power(self) -> None:
         self.__status = not self.__status
@@ -57,7 +57,7 @@ class Television:
         muted = Television.MIN_VOLUME
         if self.__muted:
             muted = Television.MIN_VOLUME
-        return f'Power = {self.__status}, Channel = {self.channel}, volume = {volume}'
+        return f'Power = {self.__status}, volume = {volume}'
 
 
 
